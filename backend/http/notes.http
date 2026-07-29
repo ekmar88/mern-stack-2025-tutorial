@@ -1,3 +1,32 @@
-
-### 1. Obtener todas las notas
+###
+# 1. Obtener todas las notas
 GET http://localhost:5001/api/notes
+
+###
+# 1.1 Obtener una nota por id
+GET http://localhost:5001/api/notes/6a6973f89a1e5919210a282f
+
+###
+# 2. Crear nota
+POST http://localhost:5001/api/notes
+Content-Type: application/json
+
+{
+  "title": "My third note",
+  "content": "updated content"
+}
+
+###
+# 3. Actualizar nota
+PUT localhost:5001/api/notes/6a69757df217c42ddb9ce689
+Content-Type: application/json
+
+{
+  "title": "My third note",
+  "content": "updated content 123"
+}
+
+###
+# 4. Delete nota
+DELETE localhost:5001/api/notes/6a69757df217c42ddb9ce689
+
