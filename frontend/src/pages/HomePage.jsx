@@ -1,6 +1,12 @@
+import { useState } from 'react'
+import Navbar from "../components/Navbar"
+
 const HomePage = () => {
   return (
-    <div></div>
+    <div className="min-h-screen">
+      const [isRateLimited, setIsRateLimited] = useState(false)
+      <Navbar />
+    </div>
   )
 }
 
