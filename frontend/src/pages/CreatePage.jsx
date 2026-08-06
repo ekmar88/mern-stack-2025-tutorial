@@ -9,7 +9,7 @@ const CreatePage = () => {
   const [content, setContent] = useState("")
   const [loading, setLoading] = useState(false)
 
-  const navigate = useNavigate
+  const navigate = useNavigate()
 
   const handleSubmit = async (e) => {
     e.preventDefault()
